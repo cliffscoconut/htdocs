@@ -1,13 +1,74 @@
+/*
+Project Name: fashion_blog
+Client: FEWD
+Author: Clifford Huang
+Developer @GA in LA
+*/
+
+@import url('reset.css')
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Capriola', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #B2ECBE;
+  color: #533747;
+  font-size: 16px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border: 30px solid #215A57;
+  border-radius: 50px;
+  font-weight: 100;
+}
+
+.fullname {
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 6px;
 }
 
 img {
   width: 100px;
   height: auto;
   border-radius: 50px;
+}
+
+img.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.contact {
+  border-bottom: 5px solid #533747;
+}
+
+.email {
+  float: left;
+  width: 30%;
+}
+
+.address {
+  text-align: center;
+}
+
+.phonenumber {
+  float: right;
+  text-align: right;
+  width: 30%;
+}
+
+h2 {
+  color: #B2ECBE;
+  height: 40px;
+  width: 160px;
+  background-color: #533747;
+  text-align: center;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
