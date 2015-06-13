@@ -88,19 +88,18 @@ h3 {
 .company {
   width: 35%;
   float: left;
-  text-align: left;
+  /*text-align: left;*/
 }
 
 .joblocation {
   width: 35%;
-  float: left;
-  text-align: right;
+  float: right;
+  /*text-align: right;*/
 }
 
 .timeframe {
   width: 30%;
-  float: left;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .achievement {
