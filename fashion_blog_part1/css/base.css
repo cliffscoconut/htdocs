@@ -11,43 +11,46 @@
 }
 
 /******************************************
-/* BASE STYLES
+/* BODY
 /*******************************************/
 
 body {
 
   font-family: "Lato", sans-serif;
+  font-size: 16px;
 
 }
 
 img {
+
   width: 720px;
   height: auto;
+  padding-top: 22px;
+
 }
 
 header h1 a {
 
-  font-size: 40px;
+  font-size: 3em;
   color: red;
   font-weight: 300;
+  text-decoration: none;
 
 }
 
 header p {
 
-  color: rgba(186,186,186,1)
+  color: rgba(136,136,136,1);
   font-size: 20px;
-
-
-}
-
-header nav {
+  padding-left: 25px;
+  padding-top: 17px;
+  font-weight: 300;
 
 }
 
 header nav a {
 
-  margin: 0;
+  margin-top: 19px;
   text-decoration: none;
   display: inline-block;
   color: rgba(255,255,255,1);
@@ -61,11 +64,196 @@ header nav a {
 
 }
 
+h3 {
+
+  color: rgba(209,209,209,1);
+  font-size: 2.0em;
+
+}
+
+h2 {
+
+  margin-top: 2.0em;
+
+}
+
+h2 a {
+
+  text-decoration: none;
+  color: rgba(0,0,0,1);
+  font-size: 2.0em;
+  font-weight: 400;
+
+}
+
+p {
+
+  padding-top: 32px;
+  line-height: 1.5;
+  color: rgba(68,68,68,1);
+
+}
+
 .firstcharacter {
-  font-size: 400%;
-  position:relative;
-  top: 20px;
+
+  font-size: 82px;
   float: left;
-  padding: 0 10px 30px;
   color: rgba(0, 0, 0, 0.2);
+  width: 80px;
+
+}
+
+
+.main-left h4 a {
+
+  text-decoration: none;
+  width: 730px;
+  color: rgba(243,0,0,1);
+  font-size: 1.2em;
+  font-weight: 700;
+  float: left;
+/******************************************
+/* Why doesn't this code work?
+  position: relative;
+  width: 730px;
+  text-align: right;
+
+  I want the width at 730px for the border.
+/*******************************************/
+  padding-top: 2.0em;
+  border-bottom: 1px solid rgba(221,221,221,1);
+  text-align: right;
+  padding-bottom: 1.5em;
+
+}
+
+/******************************************
+/* SIDEBAR
+/*******************************************/
+
+.sidebar h4 a {
+
+  text-decoration: none;
+  float: right;
+  border-bottom: 1px solid rgba(221,221,221,1);
+  margin-bottom: 1.4em;
+  padding-bottom: 1.6em;
+  margin-top: 1.4em;
+  color: rgba(243,0,0,1);
+  width: 280px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.0em;
+
+}
+
+.sidebar p {
+
+  line-height: 1.5em;
+
+}
+
+.ad {
+
+  font-family: 'Bitter', serif;
+  font-size: 60px;
+  color: rgba(150,150,150,1);
+  width: 4.0em;
+  height: 3.0em;
+  background: rgba(204,204,204,1);
+  text-align: center;
+  line-height: 3;
+  clear: both;
+  margin: auto;
+
+}
+
+
+/******************************************
+/* THIS CODE IS SHITTY.  NEEDS FIX.
+/*******************************************/
+
+.sidebar .aboutus {
+
+  font-weight: 700;
+  padding-top: 1.5em;
+  color: rgba(136,136,136,1);
+  padding-bottom: 1.0em;
+
+}
+
+.sidebar p {
+
+  color: rgba(136,136,136,1)
+  
+}
+
+.sidebar .popularposts {
+
+  border-top: 1px solid rgba(221,221,221,1);
+  margin-top: 1.5em;
+  padding-top: 2em;
+  color: rgba(136,136,136,1);
+  padding-bottom: 1.0em;
+
+}
+
+ul {
+
+  list-style-type: disc;
+
+}
+
+ul li {
+
+  color: rgba(136,136,136,1);
+
+}
+
+ul li span {
+
+  color: rgba(243,0,0,1);
+
+}
+
+ul li a {
+
+  text-decoration: none;
+  line-height: 1.2em;
+
+}
+
+.sidebar ul {
+
+  padding-left: 1em;
+
+}
+
+
+/******************************************
+/* FOOTER
+/*******************************************/
+
+.footer {
+
+  padding-left: 20px;
+
+}
+
+.footer nav a {
+
+  float: left;
+  text-decoration: none;
+  color: rgba(243,0,0,1);
+  margin-top: 2.0em;
+  padding-left: 5px;
+
+}
+
+.rightborder a {
+
+  border-right:1px solid rgba(187,187,187,1);
+  padding-right: 5px;
+  padding-left: 5px;
+
 }

@@ -1,36 +1,10 @@
-spare code:
+ul li:before {
 
-text-decoration: none;
-font-size: 50px;
-}
-
-header h2 {
-color: #020202;
-}
-
-nav a {
-text-decoration: none;
-color: rgba(0, 0, 0, 0.2);
-font-size: 24px;
-border-bottom: 1px solid rgba(0,0,0,0.2);
-padding-bottom: 5px;
-
-}
-
-.firstcharacter {
-  font-size: 400%;
+  color: rgba(136,136,136,1); /* set color to red */
+  content:"\2022"; /* /2022 is the numerical unicode for &bull; */
+  font-size:1.0em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
+  padding-right:.25em; /* give the bullet some padding from the text Make sure to use em*/
   position:relative;
-  top: 20px;
-  float: left;
-  padding: 0 10px 30px;
-  color: rgba(0, 0, 0, 0.2);
-}
+    top:.1em; /* set the vertical position of the bullet if necessary. Make sure to use em or % */
 
-h2 {
-font-weight: normal;
-}
-
-h3 {
-font-size: 40px;
-color: rgba(205, 197, 187, 0.6);
 }

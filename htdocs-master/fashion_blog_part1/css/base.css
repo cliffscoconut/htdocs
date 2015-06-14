@@ -1,0 +1,71 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+  font-family: "Lato", sans-serif;
+
+}
+
+img {
+  width: 720px;
+  height: auto;
+}
+
+header h1 a {
+
+  font-size: 40px;
+  color: red;
+  font-weight: 300;
+
+}
+
+header p {
+
+  color: rgba(186,186,186,1)
+  font-size: 20px;
+
+
+}
+
+header nav {
+
+}
+
+header nav a {
+
+  margin: 0;
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(255,255,255,1);
+  width: 179px;
+  height: 54px;
+  line-height: 3.2;
+  background: rgba(0,0,0,1);
+  border-right: 1px solid rgba(255,255,255,1);
+  text-align: center;
+  font-size: 17px;
+
+}
+
+.firstcharacter {
+  font-size: 400%;
+  position:relative;
+  top: 20px;
+  float: left;
+  padding: 0 10px 30px;
+  color: rgba(0, 0, 0, 0.2);
+}

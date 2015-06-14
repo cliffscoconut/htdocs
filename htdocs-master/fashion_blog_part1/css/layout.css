@@ -5,13 +5,11 @@
 
 
 header {
-
   position: relative;
   width: 1100px;
   height: 130px;
   top: 70px;
   left: 10px;
-
 }
 
   header h1 a {
@@ -23,7 +21,6 @@ header {
   }
 
   header nav {
-
     clear: both;
   }
 
@@ -35,33 +32,21 @@ header {
 }
 
   .main-left {
-
     width: 730px;
     float: left;
     padding-left: 20px;
-
   }
 
   .sidebar {
-
     position: relative;
     width: 325px;
     float: right;
     padding-right: 25px;
-    top: 131px;
+    top: 35px;
     padding-left: 15px;
-
   }
-
-article {
-
-  clear: both;
-  padding-top: 68px;
-
-}
 
 .footer {
 
   clear: both;
-
 }
