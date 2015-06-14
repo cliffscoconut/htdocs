@@ -13,6 +13,12 @@
 /******************************************
 /* BODY
 /*******************************************/
+html {
+
+  border-left: 5px solid rgba(221,221,221,1);
+  padding-left: 3.0em;
+
+}
 
 body {
 
@@ -42,7 +48,6 @@ header p {
 
   color: rgba(136,136,136,1);
   font-size: 20px;
-  padding-left: 25px;
   padding-top: 17px;
   font-weight: 300;
 
@@ -56,24 +61,25 @@ header nav a {
   color: rgba(255,255,255,1);
   width: 179px;
   height: 54px;
-  line-height: 3.2;
+  line-height: 2.5;
   background: rgba(0,0,0,1);
   border-right: 1px solid rgba(255,255,255,1);
   text-align: center;
-  font-size: 17px;
+  font-size: 21px;
 
 }
 
 h3 {
 
-  color: rgba(209,209,209,1);
+  color: rgba(204,204,204,1);
   font-size: 2.0em;
+  font-weight: 300;
 
 }
 
 h2 {
 
-  margin-top: 2.0em;
+  margin-top: 1.0em;
 
 }
 
@@ -86,20 +92,27 @@ h2 a {
 
 }
 
-p {
+.main-left p {
 
   padding-top: 32px;
-  line-height: 1.5;
+  line-height: 1.6em;
   color: rgba(68,68,68,1);
+  font-size: 1.0em;
 
 }
 
 .firstcharacter {
 
-  font-size: 82px;
+  font-size: 100px;
   float: left;
   color: rgba(0, 0, 0, 0.2);
-  width: 80px;
+  width: auto;
+  height: 80px;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-left: -8px;
+  margin-right: 14px;
+  padding-top: 28px
 
 }
 
@@ -107,7 +120,7 @@ p {
 .main-left h4 a {
 
   text-decoration: none;
-  width: 730px;
+  width: 720px;
   color: rgba(243,0,0,1);
   font-size: 1.2em;
   font-weight: 700;
@@ -120,7 +133,7 @@ p {
 
   I want the width at 730px for the border.
 /*******************************************/
-  padding-top: 2.0em;
+  padding-top: 1.5em;
   border-bottom: 1px solid rgba(221,221,221,1);
   text-align: right;
   padding-bottom: 1.5em;
@@ -133,14 +146,16 @@ p {
 
 .sidebar h4 a {
 
+  display:block;
   text-decoration: none;
-  float: right;
   border-bottom: 1px solid rgba(221,221,221,1);
-  margin-bottom: 1.4em;
-  padding-bottom: 1.6em;
-  margin-top: 1.4em;
+  padding-right: 12px;
+  padding-bottom: 2.0em;
+  margin-top: 2.5em;
+  margin-right:10px;
+  margin-bottom: 2.0em;
   color: rgba(243,0,0,1);
-  width: 280px;
+  width: 315px;
   text-align: right;
   font-weight: 700;
   font-size: 1.0em;
@@ -149,64 +164,70 @@ p {
 
 .sidebar p {
 
-  line-height: 1.5em;
+  line-height: 1.6em;
 
 }
 
-.ad {
+#ad {
 
   font-family: 'Bitter', serif;
   font-size: 60px;
   color: rgba(150,150,150,1);
-  width: 4.0em;
-  height: 3.0em;
+  width: 300px;
+  height: 250px;
   background: rgba(204,204,204,1);
   text-align: center;
-  line-height: 3;
+  line-height: 4.0;
   clear: both;
   margin: auto;
+  margin-left: 7.5px;
 
 }
 
 
-/******************************************
-/* THIS CODE IS SHITTY.  NEEDS FIX.
-/*******************************************/
-
-.sidebar .aboutus {
+.sidebar #aboutus {
 
   font-weight: 700;
-  padding-top: 1.5em;
   color: rgba(136,136,136,1);
-  padding-bottom: 1.0em;
+  margin-top: 10px;
+  margin-bottom: 30px;
 
 }
 
 .sidebar p {
 
   color: rgba(136,136,136,1)
-  
+
 }
 
-.sidebar .popularposts {
+.sidebar #popularposts {
 
   border-top: 1px solid rgba(221,221,221,1);
-  margin-top: 1.5em;
-  padding-top: 2em;
+  margin-top: 2.0em;
+  padding-top: 2.5em;
   color: rgba(136,136,136,1);
-  padding-bottom: 1.0em;
+  padding-bottom: 1.5em;
+  font-weight: 700;
+  width: 315px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
 ul {
 
+  position:relative;
+  left: 1.2em;
   list-style-type: disc;
+
 
 }
 
 ul li {
 
   color: rgba(136,136,136,1);
+  line-height: 1.6em;
+
 
 }
 
@@ -219,7 +240,6 @@ ul li span {
 ul li a {
 
   text-decoration: none;
-  line-height: 1.2em;
 
 }
 
@@ -236,7 +256,7 @@ ul li a {
 
 .footer {
 
-  padding-left: 20px;
+  margin-bottom: 10.0em;
 
 }
 
@@ -245,7 +265,7 @@ ul li a {
   float: left;
   text-decoration: none;
   color: rgba(243,0,0,1);
-  margin-top: 2.0em;
+  margin-top: 3.0em;
   padding-left: 5px;
 
 }
