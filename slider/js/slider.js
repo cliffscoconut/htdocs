@@ -1,43 +1,67 @@
 // Define prototypical Slider function
 Element.prototype.slider = function(){
 
-    var slider = this;
+    var slider = this
+    console.log(slider);
     var wrapper = slider.children[0];
     var slides = wrapper.children;
-    var position = 1;
+    var position = 0;
     var width = window.innerWidth;
     var leftButton = document.createElement('div');
     var rightButton = document.createElement('div');
 
-    var init = function() {
+    this.createButtons = function(){
+
+      leftButton.classList.add('left');
+      rightButton.classList.add('right');
+
+      slider.appendChild(leftButton);
+      slider.appendChild(rightButton);
+
+      leftButton.addEventListener('mousedown',function(){
+
+        if(position > (width * (slides.length - 1)) * -1){
+          position = position - width;
+          wrapper.style.marginLeft = position + 'px';
+        }
+
+      });
+//multiplier effect on width of window
+
+      rightButton.addEventListener('mousedown',function(){
+
+        if(position < 0){
+          position = position + width;
+          wrapper.style.marginLeft = position + 'px';
+        }
+/*        position = position + 1;
+        wrapper.style.marginLeft = width * position * -1 +'px';*/
+      });
+    }
+
+    this.resize = function(){
+
 
         wrapper.style.width = slides.length * width + 'px';
         wrapper.style.height = '100%';
 
-        leftButton.classList.add('left');
-        rightButton.classList.add('right');
+        for(var index=0; index < slides.length; index++) {
+          slides[index].style.width = width + 'px';
+        }
 
-        slider.appendChild(leftButton);
-        slider.appendChild(rightButton);
+    }
 
-        for(var i=0; i<slides.length; i++) {
-          slides[i].style.width = width + 'px';
-        };
+    this.init = function(){
+  //  var init = function() {
 
-        leftButton.addEventListener('mousedown',function(){
-          wrapper.style.marginLeft = width * position * -1 +'px';
-          position = position + 1;
-        });
-//multiplier effect on width of window
+      this.createButtons();
+      this.resize();
 
-        rightButton.addEventListener('mousedown',function(){
-          position = position - 1;
-          wrapper.style.marginLeft = width * position * -1 +'px';
-        });
+      window.addEventListener('resize',slider.resize);
+
     };
 
-    init();
-
+    this.init();
 
 };
 /* end Slider */
