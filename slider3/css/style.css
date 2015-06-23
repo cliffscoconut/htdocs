@@ -35,11 +35,11 @@ Developer @GA in NYC
 
 #nav {
 
-  display: none;
-  float: left;
+  display: block;
+  position: absolute;
   width: 100px;
   height: 942px;
   background-color: gray;
-  z-index:1;
+  z-index: -1;
 
 }
