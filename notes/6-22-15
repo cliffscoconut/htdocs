@@ -1,0 +1,73 @@
+Class 6/22/15
+  Nav homework
+  JSON
+  NAV Refactor
+  lab
+
+
+NEW UNIT:
+vw = view width
+-resembles percentage.
+
+XMLHttpRequest
+-method to request JSON or XML
+-GET is the verb we use to request a response from a server
+-Set a header on the request to specify the response should be JSON
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "./models/popular-photos.json", true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+  var photos = {};
+  same thing as
+  var photos = new object;
+
+FOR
+-loops from index=0.
+-until index becomes = to photos.length.
+-increments index by 1 each time around the loop.
+
+
+
+-NOTE:DOM NodeList looks like an array but isn't.
+
+
+forEach
+-arrays have a forEach method
+-loops through all the items in the Array with a callback on each loop
+-increments index by 1 each time around the loop.
+
+photos.forEach(function(photo,index){
+
+console.log(photo);
+
+});
+
+
+STRINGS
+li.innerHTML = '';
+
+-concatenate to form another string using +.
+-insert the 'Stringified' variable into the String
+
+li.innerHTML = '<div class="meta"><h5>'+photo.name+'</h5></div>';
+
+//take notice of the single outter quote and double quotes for innerHTML
+
+
+
+
+
+
+Use li.style.gackgroundSize = ''
+
+li.style.backgroundImage = 'url("'+photo.image_url+'")';
+li.style.backgroundSize = 'cover';
+
+
+______________________________________________________________________________
+create a single function in gallery.js that op
+
+start in the loop
+
+notice how single photo class has the same stats as individual li
