@@ -4,15 +4,47 @@ Element.prototype.Gallery = function(){
   var gallery = this;
   var ul = gallery.children[0];
   var photos = {};
-  // Define global variables
+  // Define global variables(
 
   this.singlePhoto = function(ev) {
 
-    // var singlePhoto = document.createElement("singlePhoto");
-    // document..appendChild(div);
+      console.log(ev.target.style.backgroundImage);
 
-    var x = ev;
-    console.log(x);
+    var section = document.createElement('section');
+    section.classList.add('single-photo');
+    section.innerHTML = ev.target.innerHTML;
+    section.style.backgroundImage = ev.target.style.backgroundImage;
+    section.style.backgroundRepeat = 'no-repeat';
+    section.style.backgroundSize = 'contain';
+    section.style.backgroundPosition = 'center center';
+    section.style.height = '100%';
+
+    var p = document.createElement('p');
+    p.innerHTML = ev.target.dataset.description;
+
+    var closeButton = document.createElement('div');
+    closeButton.classList.add('close');
+
+    closeButton.addEventListener('click',function(){
+        section.style.display = 'none';
+    });
+
+    section.children[0].appendChild(p);
+    section.appendChild(closeButton);
+    container.appendChild(section);
+
+    //   var singlePhoto = document.createElement('div');
+    //   var modal = document.getElementsByTagName("body")[0];
+    //
+    //       singlePhoto.classList.add('single-photo');
+    //       modal.appendChild(singlePhoto);
+    //
+    //   singlePhoto.innerHTML = ev.srcElement.innerHTML;
+    //
+    // var x = ev;
+    // console.log(x);
+
+
   };
 
   this.layoutPhotos = function(){
@@ -32,6 +64,9 @@ Element.prototype.Gallery = function(){
                       '</h6></div><div class="stats"><div>'+
                       photo.rating+'</div></div>'+
                       '</div>';
+
+                  li.dataset.description = photo.description;
+
                   li.addEventListener('mousedown',gallery.singlePhoto);
                   ul.appendChild(li);
 

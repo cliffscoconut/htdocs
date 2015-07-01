@@ -1,0 +1,31 @@
+nav refactor
+
+- data-section
+- for loops
+
+
+HTML FORMS
+
+  HTML INPUT TYPES
+    <form name="c_form">
+      <input type="email" >
+      <input type="tel" >
+      <input type="url" >
+      <input type="text" >
+    </form>
+
+
+
+  <a href="mailto:example@gmail.com?subject=Hello Cliff&body=This will be my message that populates in the email">Email</a>
+
+
+  CREATE THE EMAIL content
+ var link = 'mailto:'+email+'?subject=Message from '+form.children[0].value+'&body='+form.children[4].value;
+
+
+ HOMEWORK
+ // gallery.getFilteredList();
+ // li.dataset.description = photo.description; in gallery.js
+ // set the tags as data attributes called "datatags" in each <li> in the JSON (in gallery.js line 53-58)
+ // when the user focuses on the input, clear its contents
+ // after the user presses 'Enter/Return', filter the gallery <li> using tags from the JSON model.
