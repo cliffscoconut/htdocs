@@ -4,14 +4,16 @@ Element.prototype.Gallery = function(){
   var gallery = this;
   var ul = gallery.children[0];
   var photos = {};
+  var container = document.getElementyById('container');
   // Define global variables(
 
   this.singlePhoto = function(ev) {
 
-      console.log(ev.target.style.backgroundImage);
 
     var section = document.createElement('section');
+
     section.classList.add('single-photo');
+
     section.innerHTML = ev.target.innerHTML;
     section.style.backgroundImage = ev.target.style.backgroundImage;
     section.style.backgroundRepeat = 'no-repeat';

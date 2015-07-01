@@ -11,5 +11,5 @@ galleryElement.Gallery();
 var contactElement = document.getElementById('contact');
 contactElement.Contact();
 
-// var searchElement = document.getElementById('search');
-// searchElement.Search();
+var searchElement = document.getElementById('search');
+searchElement.Search();
