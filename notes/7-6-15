@@ -1,0 +1,23 @@
+look up the 'apply' function
+  - #1 most asked question in javascript job interviews
+
+MVC
+-MODEL
+    content, usually comes from API
+    not on the page, requires a request
+  JSON Model
+  create a static JSON file - model
+
+
+
+-VIEW
+
+-CONTROLLER
+
+search javascript inheritance / prototypal inheritance
+
+
+
+homework
+-perspective - parent container
+-preserve 3D - on each card
