@@ -1,8 +1,8 @@
-var cards = document.getElementById('container');
+var cards = document.getElementById('cards');
 cards.FlipCard();
-cards.CardMatch();
 
-var cardsuits = document.getElementById('container2');
+
+var cardsuits = document.getElementById('cards');
 cardsuits.SuitCards();
 
 

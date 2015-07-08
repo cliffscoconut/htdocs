@@ -1,6 +1,14 @@
 Element.prototype.FlipCard = function(){
 
-    var cards = document.getElementsByClassName('cardback');
+    var flop = this;
+    var cards = document.getElementById('cards').children;
+
+
+    this.flipTransition = function(){
+        this.style.webkitTransform = 'rotateX(180deg)';
+        this.flipped = true;
+        console.log(this.flipped);
+    }
 
     var flipCard = function(ev){
 
@@ -9,16 +17,17 @@ Element.prototype.FlipCard = function(){
 
     };
 
-    var init = function(){
+    this.init = function(){
 
         for(i=0; i<cards.length; i++){
-
-            cards[i].addEventListener("mousedown", flipCard);
+            var card = cards[i];
+            card.flipped = false;
+            card.addEventListener("mousedown", this.flipTransition);
 
         }
     };
 
-    init();
+    this.init();
 };
 //when any card is clicked, make that card disappear and reveal current cardfront
 

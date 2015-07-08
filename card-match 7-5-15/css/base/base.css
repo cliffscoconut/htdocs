@@ -10,13 +10,6 @@ html {
   margin-right: auto;
 }
 
-#container2 {
-  position:absolute;
-  width: 65%;
-  height: auto;
-  margin-left: 239px;
-}
-
 header {
   width: 100%;
   text-align: center;
@@ -27,26 +20,40 @@ header {
 }
 
 
-ul li {
+.card {
   position: relative;
+  cursor: pointer;
   float: left;
   width: 130px;
   height: 180px;
   border-radius: 10px;
+  -webkit-transition: all 1s; /* Safari */
+  transition: all 1s ease;
+  transform-style: preserve-3d;
 }
 
 .cardback {
+  position: absolute;
+  width: 130px;
+  height: 180px;
   background-image: url("../../img/bicycle-back.jpg");
   background-size: contain;
-  z-index:10;
-  /*display: none;  */
+  /*z-index:10;*/
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /*display: none;*/
 }
 
 .cardfront {
-  position: relative;
+  position: absolute;
+  width: 130px;
+  height: 180px;
   float: left;
   background: white;
-  z-index: -1;
+  /*z-index: -1;*/
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 #spade {
@@ -57,6 +64,7 @@ ul li {
   margin-right: auto;
   margin-top: 34px;
   background: url("../../img/french-suits.svg") 0 0;
+
 }
 
 #heart{

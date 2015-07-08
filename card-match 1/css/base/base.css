@@ -1,0 +1,96 @@
+body {
+  color: #121212;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background-color: #076324;
+  height: 100%;
+  width: 100%;
+}
+.title {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+}
+.cards-container {
+  height: 100%;
+  width: 80%;
+  display: block;
+  margin-top: 100px;
+  margin-left: 10%;
+  perspective: 800px;
+}
+.card {
+  position: relative;
+  background-color: white;
+  height: 150px;
+  width: 100px;
+  float: left;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 3%;
+  cursor: pointer;
+  padding: 1px;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-transition: all 1s; /* Safari */
+  transition: all 1s ease;
+  transform-style: preserve-3d;
+}
+.flipped {
+  height: 147px;
+  width: 97px;
+  background-image: url(../img/bicycle-back.jpg);
+  background-size: 98px 149px;
+  background-position: -2px -2px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.spade {
+  position: absolute;
+  top: 25px;
+  left: -2px;
+  background-image: url(../img/french-suits.svg);
+  background-position: 9px 0px;
+  height: 100px;
+  width: 100px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.heart {
+  position: absolute;
+  top: 25px;
+  left: -3px;
+  background-image: url(../img/french-suits.svg);
+  background-position: -103px 0px;
+  height: 100px;
+  width: 100px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.diamond {
+  position: absolute;
+  top: 25px;
+  left: -17px;
+  background-image: url(../img/french-suits.svg);
+  background-position: -5px -103px;
+  height: 100px;
+  width: 100px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.club {
+  position: absolute;
+  top: 25px;
+  left: -5px;
+  background-image: url(../img/french-suits.svg);
+  background-position: -105px -103px;
+  height: 100px;
+  width: 100px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
