@@ -1,0 +1,62 @@
+CSS REVIEW
+
+POSITION
+  -absolute breaks element out of the flow
+
+  position: absolute;
+  top: 50%;
+  left 50%;
+
+RELATIVE
+  -relative positions element in the flow
+
+FIXED
+  - fixed breaks element out of the flow
+  - element sticks to position even during scroll
+
+NON-PERFORMANT CSS
+  - positioning children outside of parents's box
+  - transitioning color
+        causes large amounts of repainting
+        stack elements w/ different colors and fade them instead
+  - combining box-shadows with border-radius
+
+PERFORMANT CSS
+  - stay in the box
+  - transform color w/ canvas or opacity shifts
+  - avoid border radium + box shadows
+
+  - use CSS3 3D TRransforms
+  - esp. for animation, transitions.
+  - leverages GPU of computer for faster drawing
+
+3D TRANSFORMS
+
+.box{
+    transform: translate3d(x,y,z);
+}
+
+
+.container{
+    perspective: 500px;
+    transform-style: preserve-3d;
+}
+.container .box{
+    transform: translate3d(20px,20px,20px);
+}
+
+  - 'transform-style' switches on 3D translation
+  = persepective tweaks the perspective of the camera
+
+
+.box {
+    transform: rotateX(-180deg);
+}
+.box{
+    transform: scaleX(2.0);
+}
+
+JS + CSS (libraries)
+ - famo.us
+ - three.js
+ - sprite3D

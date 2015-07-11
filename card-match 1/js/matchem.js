@@ -1,3 +1,14 @@
+Array.prototype.Shuffle = function() {
+    var i = this.length, j, temp;
+    while(--i > 0){
+        j = Math.floor(Math.random() * (i+1));
+        temp = this[j];
+        this[j] = this[i];
+        this[i] = temp;
+    }
+    return this;
+}
+
 Element.prototype.Matchem = function(){
 
 
@@ -6,7 +17,9 @@ Element.prototype.Matchem = function(){
 
 
     var init = function(){
-      console.log();
+      console.log(cardfront);
+      var arr = cardfront.Shuffle();
+      console.log(arr);
     };
 
     init();
@@ -14,18 +27,7 @@ Element.prototype.Matchem = function(){
 
 
 
-// Array.prototype.Shuffle = function() {
-//     var i = this.length, j, temp;
-//     while(--i > 0){
-//         j = Math.floor(Math.random() * (i+1));
-//         temp = this[j];
-//         this[j] = this[i];
-//         this[i] = temp;
-//     }
-//     return this;
-//
-// }
-//
+
 // var arr = ['A','B','C','D','E','F','G','H'];
 // var result = arr.shuffle();
 //
