@@ -1,0 +1,15 @@
+{
+  "cards": [{
+    "suit" : "spade"
+    },
+    {
+    "suit" : "heart"
+    },
+    {
+    "suit" : "diamond"
+    },
+    {
+    "suit" : "club"
+    }]
+
+}

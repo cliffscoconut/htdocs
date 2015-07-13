@@ -1,0 +1,57 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    color: #121212;
+    font-size: 12px;
+    line-height: 1.4;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  	width: 100%;
+    height:100%;
+  	margin: 0;
+    padding: 0;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#container {
+    position: relative;
+    width: auto;
+    height: auto;
+
+}
+.search {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.laundry {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: 100px;
+    
+}
