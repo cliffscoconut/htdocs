@@ -1,0 +1,81 @@
+THINK RESPONSIVE (webApp1)
+
+Fixed vs Fluid
+  - fluid uses percentages to size elements
+  - good practice
+
+
+FIXED layout
+  - relies on a container of fixed width
+  - usually 960px or 980px since high % of monitors were 1024px wide
+  - the largest segment now is 1366x768
+  - followed by 1920x1080 monitors (tv).
+  - followed by portrait orientation on most tablets
+
+RESPONSIVE (So why do we say 'mobile first'?)
+  - 5 years ago companies were simply missing out on an emerging segment
+  - use analytics to determine audience
+  - design for your audience
+  - think holistically about UX
+
+RESPONSIVE "Tools for success."
+  - use fluid font-size
+  - breakpoints with media queries
+  - use a grid system.
+  - use developer tools
+
+RESPONSIVE LAYOUT
+  - different styles for different screen widths
+  - use an elastic/fluid layout
+  - boxes sized in % or vs/vh
+  - fonts sized with em (recommended for font size only, NOT boxes)
+
+EM
+
+body{
+    font-size: 1em;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+  - works like percentage
+  - 1.5.em = 1.5 * 16px = 24px
+
+VIEWPORT
+<meta name="viewport" content=width=device-width, initial-scale=1, user-scalable=none">
+  - goes in <head>
+  - defines the width of the window for the mobile device's screen
+  - sets an initial scale (or zoom).
+  - Allows developer to restrict pinch to zoom
+
+CHROME DEV TOOLS
+
+
+SERVERS HOST WEBSITES
+  - your computer is a server
+  - localhost
+
+SERVERS HAVE AN ADDRESS
+  - your computer is a server
+  - localhost is equal to the ip address (on the same network)
+
+can you inspect iPhone on Windows PC?
+
+
+MEDIA QUERIES
+
+@media only screen and (min-width: 240px) and (max-width: 320px) {
+
+}
+
+  - supports styling within a range of the window's width
+  - helps when resizing a desktop browser's window
+
+
+
+GRIDS
+  - zen grids
+  - bourbon neat
