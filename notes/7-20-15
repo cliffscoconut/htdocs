@@ -1,0 +1,22 @@
+PREPROCESSORS
+  - LES
+  - SASS
+  - Coffeescript
+  - HAML
+
+LINTERS
+  - checks project code for errors.
+  - displays errors in notification.
+  - view the log.
+
+
+PREPROCESSORS "SASS VS LESS"
+  - devs like the syntax and quirks of SASS over LESS
+  - LESS is only so popular b/c of Bootstrap
+
+  - SASS drops {} and only uses indents.
+  - SCSS is syntactically similar to CSS
+  - the filename matters
+
+PREPROCESSORS "SASS compiles"
+  - 

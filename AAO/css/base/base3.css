@@ -1,0 +1,126 @@
+body {
+  position: relative;
+  width: 100%;
+  height: 1080px;
+  font-size: 16px;
+
+}
+
+#portal {
+  /*display: none;*/
+  position: inherit;
+  width: inherit;
+  height: inherit;
+}
+
+#image-container {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  background-image: url("../../img/the_goal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  z-index: -1;
+}
+
+#portal-header {
+  position: relative;
+  width: 100%;
+  height: 15%;
+
+}
+
+.logo {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  font-family: 'New Rocker', cursive;
+  padding-top: 30px;
+}
+
+#login {
+  position: absolute;
+  top: 377px;
+  left: 429px;
+  width: auto;
+  height: auto;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.form input {
+
+}
+
+.form button {
+  float: right;
+}
+
+/*MAIN PAGE*/
+#main-page {
+  position: inherit;
+  width: inherit;
+  height: inherit;
+}
+
+#header {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background: teal;
+}
+
+#navigation {
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+#navigation ul {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: red;
+}
+
+#navigation li {
+  font-family: fantasy, serif;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: red;
+  border: 1px solid grey;
+  width: 90px;
+  height: 25px;
+  text-align: center;
+  line-height: 20px;
+}
+
+#body {
+  float: left;
+  width: 77%;
+  height: 900px;
+  padding-right: 80px;
+  background: blue;
+}
+
+#body img {
+  position: relative;
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#side {
+
+  float: left;
+  width: 23%;
+  height: 900px;
+  background: green;
+}
