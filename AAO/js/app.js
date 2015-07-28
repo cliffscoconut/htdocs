@@ -1,2 +1,2 @@
-var portal = document.getElementById('portal');
-portal.Navvy();
+var portalElement = document.getElementById('portal');
+portalElement.Navigation();
